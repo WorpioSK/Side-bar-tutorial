@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="sidebarmenu3.css">
+    <title>My Sidebar Page</title>
+</head>
+<body>
+    <div id="mysidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+        <ul>
+            <h4>Main Menu</h4>
+            <li>
+                <a href="#"><i class="material-icons">dashboard</i> Dashboard</a>
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">show_chart</i> Revenue</a>
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">flag</i> Report</a>
+            </li>
+            <h4>Advanced</h4>
+            <li>
+                <a href="#"><i class="material-icons">person</i> Designer</a>
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">group</i> Developer</a>
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">star</i> Magic Build</a>
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">pacemaker</i> Theme  Maker</a>
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">monitoring</i> Analytic</a>
+            </li>
+            <h4>Account</h4>
+            <li>
+                <a href="#"><i class="material-icons">bar_chart</i> Overview</a>
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">mail</i> Message</a>
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">settings</i> Settings</a>
+            </li>
+            <li>
+                <a href="#"><i class="material-icons">logout</i> Exit</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ Menu</button>
+    </div>
+    
+    <script>
+        function openNav() {
+    document.getElementById("mysidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mysidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+    </script>
+</body>
+</html>
